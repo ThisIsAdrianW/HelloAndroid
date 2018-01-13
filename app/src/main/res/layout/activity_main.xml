@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#091c2b">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="Udacity"
+        android:textColor="#6e90ab"
+        android:gravity="center_horizontal"
+        android:paddingTop="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+            android:paddingTop="5dp"
+            android:src="@drawable/home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+                />
+            <TextView
+            android:paddingTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="2465 Latham St.\n Mountain View, CA 94043"
+            android:gravity="center_horizontal"
+            android:textColor="#c3d4f2"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:paddingTop="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="Call us: \n650-555-5555"
+                android:gravity="center_horizontal"
+                android:textColor="#c3d4f2"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:src="@drawable/u"
+    android:layout_weight="5"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+    <TextView
+    android:layout_marginLeft="12dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="You can also visit us at:"
+    android:textColor="#c3d4f2"
+    android:textSize="16sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.udacity.com"
+        android:textColor="#c3d4f2"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:textColorLink="#858de0"/>
+</RelativeLayout>
+
+</LinearLayout>
